@@ -1,0 +1,180 @@
+/*Default styles */
+nav,nav >ul,nav li, a,p, h1,h3,h5,h4{
+    margin: 0;
+    padding: 0; 
+    list-style: none;
+}
+html, body{
+    font-size: 14px;
+    letter-spacing: 0.01rem;
+}
+body{
+    font-family: AMCAPEternal;
+    background: url(../images/webbg.jpg);
+    background-position: 50% 0;
+    line-height: 1.6;
+    color: #fff;
+}
+a{color: #fff;}
+a:hover, a:focus{
+    color: #fff;
+}
+h2{
+    font-size: 1.4rem;
+}
+h3{
+    font-size:1.2rem;
+}
+.nav-container{
+    background: rgba(0, 0, 0, .7);
+    width: 100%;
+    display: -webkit-box;     
+    display: -moz-box;         
+    display: -ms-flexbox;      
+    display: -webkit-flex;     
+    display: flex;  
+    
+    -webkit-justify-content: center; 
+    justify-content: center; 
+    flex-pack: center;
+    -ms-flex-pack:center;
+}
+
+.nav-container ul li{
+    display: inline-block;
+    line-height: 1;
+}
+.nav-container ul li a{
+    padding: 1rem 1.5rem;
+    color: #ccc;
+    display: inline-block;
+    letter-spacing: .002em;
+    transition: .3s background;
+}
+.nav-container ul li a:hover{
+    background: #7F141A;
+    color: #f7c2c5;
+}
+
+.logo-container{
+    margin-top:1rem;
+}
+
+.red, .grey{
+    font-family: AMCAPEternal;
+}
+.red{
+    color: #7F141A;
+}
+.grey{
+    color: #9F9F9F;
+}
+
+
+.main-content-container{
+    background: rgba(0, 0, 0, .95);
+    padding: 1rem;
+}
+.main-content{
+}
+.title-border{
+    border-bottom: 1px solid grey;
+    margin-bottom: 20px;
+}
+.latest-match,.latest-video{
+    background: #0E0E0E;
+}
+.result-panel {
+    padding: .5rem 1rem;
+}
+
+.result-panel-score p{
+ font-size: 38px ;   
+ font-size: 2.6em ;   
+ font-size: 2.6rem ;   
+}
+
+.result-panel-score-red{
+    background: #521517;
+    color: #210809;
+}
+.result-panel-score-grey{
+    color: #404040;
+    background: #9F9F9F;
+}
+
+.view-match {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    line-height: 2.6;
+    font-size: 1.2rem;
+    transition: .3s background ease-in-out;
+    background: rgba(0, 0, 0, .95);
+    position: relative;
+}
+.view-match:hover{
+    background: #B61E23;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Small screens
+@media only screen {
+    body{
+        width: 80%;
+    }
+} /* Define mobile styles */
+
+@media only screen and (max-width: 40em) {
+    
+    /* removing the floats from header contact info */
+   
+
+
+    
+    
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+
+
+// Medium screens
+@media only screen and (min-width: 40.063em) { 
+    
+
+} /* min-width 641px, medium screens */
+
+
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+    
+    
+    
+} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+
+
+
+
+
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { 
+
+} /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+
