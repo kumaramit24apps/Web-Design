@@ -1,0 +1,14 @@
+@font-face {
+	font-family: 'AMCAPEternal';
+	src: url('./AMCAPEternal.eot');
+	src: local('AMCAPEternal'), url('./AMCAPEternal.woff') format('woff'), url('./AMCAPEternal.ttf') format('truetype');
+	
+	font-weight: normal;
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_4876">Text with this font applied</p> */
+.amcapeternal-font {
+	font-family: 'AMCAPEternal' !important;
+	font-weight: normal;
+}
+
+/* Font downloaded from FontsForWeb.com */
