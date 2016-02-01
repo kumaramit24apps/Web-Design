@@ -15,6 +15,17 @@ body{
     line-height: 1.6;
     color: #fff;
 }
+.stick-at-top{
+    width: 100%;
+    position: fixed;
+    box-shadow: 0 0 10px -1px #000;
+    top:0;
+    left:0;
+    z-index: 9999;
+}
+
+
+
 a{color: #fff;}
 a:hover, a:focus{
     color: #fff;
@@ -188,20 +199,6 @@ h4{
     color: #B11D22;
 }
 
-.stick-at-top{
-    width: 100%;
-    position: fixed;
-    box-shadow: 0 0 10px -1px #000;
-    top:0;
-    left:0;
-    z-index: 9999;
-}
-
-
-
-
-
-
 
 
 .footer-xensus{
@@ -230,9 +227,40 @@ h4{
 @media only screen and (max-width: 40em) {
     
     /* removing the floats from header contact info */
-   
-
-
+  .stick-at-top{
+  
+    position:relative;
+}
+    .menu-icon{
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        background: #0E0E0E;
+    }
+.nav-container-mobile ul{
+        width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+.nav-container-mobile ul li{
+    display: block;
+    width: 100%;
+    line-height: 1;
+}
+.nav-container-mobile ul li a{
+    padding: 1rem 1.5rem;
+    color: #ccc;
+    display: block;
+    text-align: center;
+    letter-spacing: .002em;
+    transition: .3s background;
+}
+.nav-container-mobile ul li a:hover{
+    background: #7F141A;
+    color: #f7c2c5;
+}
     
     
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
@@ -248,8 +276,7 @@ h4{
 
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
-    
-    
+
     
 } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 

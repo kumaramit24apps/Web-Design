@@ -10,7 +10,8 @@
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body>
-    <div class="sticky contain-to-grid">
+   
+    <div class="stick-at-top visible-for-medium-up">
         <nav class="large-12 nav-container">
             <ul >
                 <li class="active-link"><a href="#" alt="1">Home</a></li>
@@ -22,6 +23,21 @@
             </ul>
         </nav>
     </div>    
+    <div class="stick-at-top visible-for-small">
+        <div class="show-for-small-only menu-icon"><a href="#">Menu</a></div>
+        <nav class="large-12 nav-container nav-container-mobile">
+            <ul >
+                <li class="active-link"><a href="#" alt="1">Home</a></li>
+                <li><a href="#" alt="2">News</a></li>
+                <li><a href="#" alt="3">Players</a></li>
+                <li><a href="#" alt="4">About Us</a></li>
+                <li><a href="#" alt="5">Jobs</a></li>
+                <li><a href="#" alt="6">Partners</a></li>
+            </ul>
+        </nav>
+    </div>    
+    
+    
     <div class="row logo-container">
         <div class="large-12 columns">
             <img src="../images/Logo.png" alt="logo">
@@ -247,6 +263,13 @@
     <script src="js/foundation.min.js"></script>
     <script>
       $(document).foundation();
+        
+        $(function(){
+            $(".menu-icon").click(function(e){
+                $(".nav-container-mobile").slideToggle("hide");
+                e.preventDefault();
+            })     
+        });
     </script>
   </body>
 </html>
