@@ -10,10 +10,10 @@
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body>
-    
+    <div class="sticky contain-to-grid">
         <nav class="large-12 nav-container">
             <ul >
-                <li><a href="#" alt="1">Home</a></li>
+                <li class="active-link"><a href="#" alt="1">Home</a></li>
                 <li><a href="#" alt="2">News</a></li>
                 <li><a href="#" alt="3">Players</a></li>
                 <li><a href="#" alt="4">About Us</a></li>
@@ -21,6 +21,7 @@
                 <li><a href="#" alt="6">Partners</a></li>
             </ul>
         </nav>
+    </div>    
     <div class="row logo-container">
         <div class="large-12 columns">
             <img src="../images/Logo.png" alt="logo">
@@ -31,9 +32,9 @@
        
         <div class="small-12 columns main-content">
          <!--First Row-->
-          <div class="row">
+          <div class="row"  data-equalizer>
              <!--first-column-->
-              <div class="small-12 medium-4 columns latest-match">
+              <div class="small-12 medium-4 columns latest-match"  data-equalizer-watch>
                   <h2 class="title-border"><span class="red">Latest</span> <span class="grey">Matches</span> </h2>
                   <!--first sub row-->
                   <div class="row result-panel ">
@@ -56,15 +57,14 @@
                       <a href="#" alt="View match" class="view-match"><span class="red">View</span> <span class="grey">Match</span></a>
                   </div>
                   
-                  <div class="row">
-                  </div>
+                 
                   <!--third sub row-->
                   <div class="row result-panel result-panel-title">
                       <div class="small-6 columns">
                           <h3 class="text-center"><span class="red">Black Widow</span></h3>
                       </div>
                     <div class="small-6  columns">
-                          <h3 class="text-center"><span class="grey">Fnatic</span> </h3>
+                          <h3 class="text-center"><span class="grey">NIP</span> </h3>
                     </div>
                   </div>
                   
@@ -84,140 +84,146 @@
               
          
               
-              <!--Start second colunms-->
+              <!--Start first second colunms-->
               
-              <div class="small-12 medium-4 columns latest-match">
+              <div class="small-12 medium-4 columns latest-videos " data-equalizer-watch>
                   <h2 class="title-border"><span class="red">Latest</span> <span class="grey">Videos</span> </h2>
                   <!--first sub row-->
-                  <div class="row result-panel ">
-                      <div class="small-6 columns">
-                          <h3 class="text-center"><span class="red">Black Widow</span></h3>
+                  <div class="row video-panel ">
+                      <div class="small-12 columns">
+                          <iframe width="100%" height="200px" src="https://www.youtube.com/embed/ECewrAld3zw" frameborder="0" allowfullscreen></iframe>
                       </div>
-                    <div class="small-6  columns">
-                          <h3 class="text-center"><span class="grey">Fnatic</span> </h3>
-                    </div>
                   </div>
-                  
-                  <!--second sub row-->
-                  <div class="row result-panel">
-                      <div class="small-6 columns result-panel-score-red text-center result-panel-score">
-                          <p>3</p>
-                      </div>
-                    <div class="small-6  columns result-panel-score-grey text-center result-panel-score">
-                          <p>16</p>
-                    </div>
-                      <a href="#" alt="View match" class="view-match"><span class="red">View</span> <span class="grey">Match</span></a>
-                  </div>
-                  
-                  <div class="row">
-                  </div>
-                  <!--third sub row-->
-                  <div class="row result-panel result-panel-title">
-                      <div class="small-6 columns">
-                          <h3 class="text-center"><span class="red">Black Widow</span></h3>
-                      </div>
-                    <div class="small-6  columns">
-                          <h3 class="text-center"><span class="grey">Fnatic</span> </h3>
-                    </div>
-                  </div>
-                  
-                  <!--fourth sub row-->
-                  <div class="row result-panel">
-                      <div class="small-6 columns result-panel-score-red text-center result-panel-score">
-                          <p>16</p>
-                      </div>
-                    <div class="small-6  columns result-panel-score-grey text-center result-panel-score">
-                          <p>11</p>
-                    </div>
-                        <a href="#" alt="View match" class="view-match"><span class="red">View</span> <span class="grey">Match</span></a>
-                  </div>
-                  
-                  
-              </div><!--End second column-->
+              </div><!--End first row second column-->
               
               
               
               
               <!--first row- third column-->
-              <div class="small-12 medium-4 columns latest-match">
-                  <h2 class="title-border"><span class="red">Latest</span> <span class="grey">Matches</span> </h2>
+              <div class="small-12 medium-4 columns member-login member-panel" data-equalizer-watch>
+                  <h2 class="title-border"><span class="red">Membber</span> <span class="grey">Login</span> </h2>
                   <!--first sub row-->
-                  <div class="row result-panel ">
-                      <div class="small-6 columns">
-                          <h3 class="text-center"><span class="red">Black Widow</span></h3>
+                  <div class="row form-container">
+                      <div class="small-10 small-centered columns">
+                          <form action="#" method="post">
+                             <label for="username" class="text-center">Username</label>
+                              <input type="text"  id="username" >
+                              
+                              <label for="password" class="text-center">Password</label>
+                              <input type="password" id="password">
+                              <div class="row">
+                                 <div class="small-12 columns">
+                                      <input type="submit" name="submit" value="Login" class="button success large expand" >
+                                  </div>
+                              </div>
+                          </form>
                       </div>
-                    <div class="small-6  columns">
-                          <h3 class="text-center"><span class="grey">Fnatic</span> </h3>
-                    </div>
                   </div>
-                  
-                  <!--second sub row-->
-                  <div class="row result-panel">
-                      <div class="small-6 columns result-panel-score-red text-center result-panel-score">
-                          <p>3</p>
-                      </div>
-                    <div class="small-6  columns result-panel-score-grey text-center result-panel-score">
-                          <p>16</p>
-                    </div>
-                      <a href="#" alt="View match" class="view-match"><span class="red">View</span> <span class="grey">Match</span></a>
-                  </div>
-                  
-                  <div class="row">
-                  </div>
-                  <!--third sub row-->
-                  <div class="row result-panel result-panel-title">
-                      <div class="small-6 columns">
-                          <h3 class="text-center"><span class="red">Black Widow</span></h3>
-                      </div>
-                    <div class="small-6  columns">
-                          <h3 class="text-center"><span class="grey">Fnatic</span> </h3>
-                    </div>
-                  </div>
-                  
-                  <!--fourth sub row-->
-                  <div class="row result-panel">
-                      <div class="small-6 columns result-panel-score-red text-center result-panel-score">
-                          <p>16</p>
-                      </div>
-                    <div class="small-6  columns result-panel-score-grey text-center result-panel-score">
-                          <p>11</p>
-                    </div>
-                        <a href="#" alt="View match" class="view-match"><span class="red">View</span> <span class="grey">Match</span></a>
-                  </div>
-                  
                   
               </div><!--End first row third column-->
        
         </div><!--End first row-->
          
-       
+    <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->   
          
          
+         <!--Custom content panels section : admin and read more -->
           
           <!--Second row-->
-          <div class="row">
-              <div class="small-12 medium-4 columns">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium fugit sunt ducimus culpa commodi dolores. Tenetur atque, nulla possimus temporibus, impedit mollitia. Doloremque maxime adipisci facere quod blanditiis, ea aut, consequuntur, eum ducimus, sit amet fugiat! Reiciendis molestias, perspiciatis quos ex voluptatibus quibusdam cumque voluptatum placeat modi tempora odit doloribus.
-              </div>
-              <div class="small-12 medium-4 columns">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus consequuntur, sunt! Ratione, quidem nobis molestiae inventore iste quasi consequatur maxime rem, necessitatibus, animi quibusdam. Eius quis fugit ullam expedita consequuntur harum at ipsam. Placeat, in, magnam. Optio eum libero quos eos ea, repudiandae, facere earum unde iusto, voluptates quisquam excepturi?
-              </div>
-              <div class="small-12 medium-4 columns">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus consequuntur, sunt! Ratione, quidem nobis molestiae inventore iste quasi consequatur maxime rem, necessitatibus, animi quibusdam. Eius quis fugit ullam expedita consequuntur harum at ipsam. Placeat, in, magnam. Optio eum libero quos eos ea, repudiandae, facere earum unde iusto, voluptates quisquam excepturi?
-              </div>
+          <div class="row custom-content-container" style="margin-top:1rem !important">
+                <!--second row first col-->
+              <div class="small-12 medium-4 columns custom-content-panel">
+                <div class="row">
+                    <div class="small-12 columns blank-panel blank-panel-skyblue">
+                        
+                    </div>
+                </div>
+                 <div class="row">
+                    <div class="small-12 columns admin-content">
+                        <p class="">We have finally finished the design for the website.
+                                <br>
+                            We hope you enjoy the design, and we look forward to seeing our team grow. </p>
+                                  
+                        <!--Attribution and Read more-->
+                        <div class="row admin-readme">
+                           <div class='small-6 columns '>
+                                <h4 class="text-left"><span class="red">By</span> <span class="grey">Admin</span> </h4>
+                            </div>
+                            <div class='small-6 columns '>
+                                <h4 class="text-right"><a href="#"><span class="grey">Read More</span></a></h4>
+                            </div>
+                        </div><!--Attribution and read more-->
+                    </div>
+                </div><!--Row end-->
+              </div> <!--End second row first col-->
+              
+               <!--second row second col-->
+              <div class="small-12 medium-4 columns custom-content-panel">
+                <div class="row">
+                    <div class="small-12 columns blank-panel blank-panel-brown">
+                        
+                    </div>
+                </div>
+                 <div class="row">
+                    <div class="small-12 columns admin-content">
+                        <p class="">We have finally finished the design for the website.
+                                <br>
+                            We hope you enjoy the design, and we look forward to seeing our team grow. </p>
+                                  
+                        <!--Attribution and Read more-->
+                        <div class="row admin-readme">
+                           <div class='small-6 columns  '>
+                                <h4 class="text-left"><span class="red">By</span> <span class="grey">Admin</span> </h4>
+                            </div>
+                            <div class='small-6 columns '>
+                                <h4 class="text-right"><a href="#"><span class="grey">Read More</span></a></h4>
+                            </div>
+                        </div><!--Attribution and read more-->
+                    </div> <!--ends admin-content-->
+                </div>
+              </div> <!--End second row second col-->
+        
+                    
+               <!--second row third col-->
+              <div class="small-12 medium-4 columns custom-content-panel">
+                <div class="row">
+                    <div class="small-12 columns blank-panel blank-panel-darkblue">
+                        
+                    </div>
+                </div>
+                
+                 <div class="row">
+                    <div class="small-12 columns admin-content">
+                        <p class="">We have finally finished the design for the website.
+                                <br>
+                            We hope you enjoy the design, and we look forward to seeing our team grow. </p>
+                                  
+                        <!--Attribution and Read more-->
+                        <div class="row admin-readme">
+                           <div class='small-6 columns  '>
+                                <h4 class="text-left"><span class="red">By</span> <span class="grey">Admin</span> </h4>
+                            </div>
+                            <div class='small-6 columns '>
+                                <h4 class="text-right"><a href="#"><span class="grey">Read More</span></a></h4>
+                            </div>
+                        </div><!--Attribution and read more-->
+                    </div> <!--ends admin-content-->
+                </div>
+              </div> <!--End second row third col-->
+          
+          
         </div><!--End second row-->
-          
-          
-      
+
+        <footer class="row">
+            <div class="small-12 columns footer-xensus">
+               <h2 class="amcapeternal-font" style="visibility:hidden">XENSUS</h2>
+            </div>
+        </footer>  
           
           
           
         </div><!--Main Column-->
     </main>
-    
-    
-<!--    Foorter-->
-    <footer>
-        copyright
-    </footer>
     
     
     
